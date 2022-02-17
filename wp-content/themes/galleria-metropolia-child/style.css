@@ -1,0 +1,138 @@
+/*
+Theme Name: Galleria Metropolia Child
+Theme URI: http://cmsmasters.net/galleria-metropolia-child/
+Author: cmsmasters
+Author URI: http://cmsmasters.net/
+Description: Galleria Metropolia Child Theme
+Template: galleria-metropolia
+Version: 1.0.0
+License:
+License URI:
+Text Domain: galleria-metropolia-child
+Tags: one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+*/
+
+
+.cmsmasters_sale_banner {
+	background:url("img/banner.png") no-repeat 0 0;
+	display:block;
+	width:461px;
+	height:269px;
+	margin:auto;
+	opacity:0;
+	visibility:hidden;
+	overflow:hidden;
+	position:fixed;
+	left:auto;
+	right:-1px;
+	top:auto;
+	bottom:300px;
+	z-index:9998;
+	-webkit-transition:opacity .3s ease-in-out, visibility .3s ease-in-out, bottom 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+	-moz-transition:opacity .3s ease-in-out, visibility .3s ease-in-out, bottom 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+	-ms-transition:opacity .3s ease-in-out, visibility .3s ease-in-out, bottom 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+	-o-transition:opacity .3s ease-in-out, visibility .3s ease-in-out, bottom 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+	transition:opacity .3s ease-in-out, visibility .3s ease-in-out, bottom 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+
+.cmsmasters_sale_banner.cmsmasters_show {
+	top:auto;
+	bottom:100px;
+	opacity:1;
+	visibility:visible;
+}
+
+.cmsmasters_sale_banner .cmsmasters_button {
+	color:#fff;
+	background-color:transparent;
+	border-color:#fff;
+	font-size:11px;
+	line-height:36px;
+	text-transform:uppercase;
+	display:inline-block;
+	padding:0 20px;
+	cursor:pointer;
+	position:absolute;
+	right:62px;
+	bottom:62px;
+	border-width:2px;
+	border-style:solid;
+}
+
+.cmsmasters_sale_banner .cmsmasters_button:hover {
+	color:#111018;
+	background-color:#fff;
+	border-color:#fff;
+}
+
+.cmsmasters_close {
+	width:35px;
+	height:35px;
+	cursor:pointer;
+	position:absolute;
+	right:22px;
+	top:17px;
+	z-index:9999;
+}
+
+.cmsmasters_close:before {
+	content:'';
+	border-right:35px solid #16202f;
+	border-bottom:35px solid transparent;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.cmsmasters_close_inner {
+	display:block;
+	width:10px;
+	height:10px;
+	position:absolute;
+	right:5px;
+	bottom:20px;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
+}
+
+.cmsmasters_close_inner:before, 
+.cmsmasters_close_inner:after {
+	content:'';
+	background:#ffffff;
+	display:block;
+	width:1px;
+	height:1px;
+	margin:auto;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	-webkit-transition:background-color 0.3s ease-in-out;
+	-moz-transition:background-color 0.3s ease-in-out;
+	-ms-transition:background-color 0.3s ease-in-out;
+	-o-transition:background-color 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+.cmsmasters_close:hover .cmsmasters_close_inner:before, 
+.cmsmasters_close:hover .cmsmasters_close_inner:after {
+	background:#80848c;
+}
+
+.cmsmasters_close_inner:before {
+	width:100%;
+}
+
+.cmsmasters_close_inner:after {
+	height:100%;
+}
+
+@media only screen and (max-width: 540px) {
+	.cmsmasters_sale_banner {
+		display:none;
+	}
+}

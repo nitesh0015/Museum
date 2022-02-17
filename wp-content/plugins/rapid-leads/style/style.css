@@ -1,0 +1,134 @@
+body{
+	overflow-x: hidden;
+}
+.sml_row{
+	display: grid;
+	grid-gap:0px;
+}
+.sml_col_1{
+	grid-column: 1/2;
+	grid-row: 1/2;
+	width: 100%;
+}
+.sml_col_2{
+	grid-column: 2/3;
+	grid-row: 1/2;
+	width: 100%;
+}
+.sml_item{
+
+}
+.sml_item_inside{
+	padding: 10px 0px 10px 0px;
+}
+.supermobleads{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	z-index: 999999999999;
+}
+.supermobleads a:link, .supermobleads a:visited{
+	color: #fff;
+}
+.whatsapp{
+	background-color: #25d366 !important;
+}
+.phonecolor{
+	background-color: #f47721 !important;
+}
+.vert_move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+.vert_move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.float{
+	width:60px;
+	height:60px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	box-shadow: 2px 2px 3px #999;
+	display: inline-block;
+}
+.float>span{
+	font-size: 45px;
+	padding-top: 7px;
+	padding-left: 8px;
+}
+
+.rightbottom{
+	bottom:40px;
+	right:40px;
+}
+
+.leftbottom{
+	bottom:40px;
+	left: 40px;
+}
+
+.righttop{
+	top:40px;
+	right: 40px;
+}
+
+.bottomcenter{
+	bottom: 50px;
+	left: calc(50% - 70px);
+}
+
+.supermobleadsbuttonwrap{
+	position:fixed;
+}
+
+.sml_floatbutton{
+	z-index: 999999999999;
+}
+
+.wiggle{
+	-webkit-animation: btnWiggle 2s infinite;
+  	-moz-animation: btnWiggle 2s infinite;
+  	-o-animation: btnWiggle 2s infinite;
+  	animation: btnWiggle 2s infinite;
+}
+
+/* animation */
+@-webkit-keyframes btnWiggle {
+    0% {-webkit-transform: rotate(0deg);}
+    2% {-webkit-transform: rotate(-7deg);}
+    3.5% {-webkit-transform: rotate(7deg);}
+    5% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(0deg);}
+}
+@-o-keyframes btnWiggle {
+    0% {-webkit-transform: rotate(0deg);}
+    2% {-webkit-transform: rotate(-7deg);}
+    3.5% {-webkit-transform: rotate(7deg);}
+    5% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(0deg);}
+}
+@keyframes btnWiggle {
+    0% {-webkit-transform: rotate(0deg);}
+    2% {-webkit-transform: rotate(-7deg);}
+    3.5% {-webkit-transform: rotate(7deg);}
+    5% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(0deg);}
+}
+
+@media screen and (min-width: 480px){
+	.supermobleadsbuttonwraponoff{
+		display: none;
+	}
+}
